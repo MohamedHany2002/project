@@ -1,0 +1,12 @@
+if request is get 
+	signup template
+else
+	if pass1=pass2 and name not exist
+		auth this user and login
+		redirect to home
+	elseif pass1 != pass2
+		return render(error)
+	else if name exist
+		return render(error)
+	else 
+		return render(error1,error2)
